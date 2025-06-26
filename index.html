@@ -1,0 +1,26 @@
+html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Analisi Utenza Energetica</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="contenitore">
+    <h1>Analisi Utenza Energetica</h1>
+    <form action="risultato.html" method="GET">
+      <label for="pod">POD:</label>
+      <input type="text" id="pod" name="pod" required />
+
+      <label for="kwh">kWh ultimo mese:</label>
+      <input type="number" id="kwh" name="kwh" required />
+
+      <label for="costo">Costo bolletta (€):</label>
+      <input type="number" step="0.01" id="costo" name="costo" required />
+
+      <button type="submit">Analizza</button>
+    </form>
+  </div>
+</body>
+</html>
